@@ -1,6 +1,5 @@
-package com.cool.ProductManagement;
+package com.cool.productmanagement;
 
-import ch.qos.logback.core.net.SyslogOutputStream;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
@@ -11,5 +10,4 @@ public class ProductManagementApplication {
 		SpringApplication.run(ProductManagementApplication.class, args);
 		System.out.println("started!!!!!!");
 	}
-
 }

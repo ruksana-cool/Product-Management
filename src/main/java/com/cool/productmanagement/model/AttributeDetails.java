@@ -1,6 +1,4 @@
-package com.cool.ProductManagement.model;
-
-import javax.persistence.Column;
+package com.cool.productmanagement.model;
 
 public class AttributeDetails {
    String productType;

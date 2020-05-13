@@ -1,6 +1,6 @@
-package com.cool.ProductManagement.jpa.repo;
+package com.cool.productmanagement.jpa.repo;
 
-import com.cool.ProductManagement.jpa.model.ProductAttribute;
+import com.cool.productmanagement.jpa.model.ProductAttribute;
 import org.springframework.data.repository.CrudRepository;
 
 public interface ProductAttributeRepository extends CrudRepository<ProductAttribute,Long> {

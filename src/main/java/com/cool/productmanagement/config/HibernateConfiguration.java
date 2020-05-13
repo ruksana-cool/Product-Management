@@ -1,4 +1,4 @@
-package com.cool.ProductManagement.config;
+package com.cool.productmanagement.config;
 
 import com.zaxxer.hikari.HikariDataSource;
 import org.slf4j.Logger;
@@ -28,7 +28,7 @@ public class HibernateConfiguration {
         LocalContainerEntityManagerFactoryBean em
                 = new LocalContainerEntityManagerFactoryBean();
         em.setDataSource(dataSource());
-        em.setPackagesToScan(new String[] { "com.cool.ProductManagement" });
+        em.setPackagesToScan(new String[] { "com.cool.productmanagement" });
 
         JpaVendorAdapter vendorAdapter = new HibernateJpaVendorAdapter();
         em.setJpaVendorAdapter(vendorAdapter);

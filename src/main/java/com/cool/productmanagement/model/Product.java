@@ -1,12 +1,11 @@
-package com.cool.ProductManagement.model;
+package com.cool.productmanagement.model;
 
-import javax.persistence.Column;
 import java.util.List;
 
-public class ProductInsertion {
+public class Product {
     String productName;
     String productDescription;
-    List<AttributeDetails> attributeDetails;
+    AttributeDetails attributeDetails;
 
     public String getProductName() {
         return productName;
@@ -24,11 +23,8 @@ public class ProductInsertion {
         this.productDescription = productDescription;
     }
 
-    public List<AttributeDetails> getAttributeDetails() {
-        return attributeDetails;
-    }
+    public AttributeDetails getAttributeDetails() { return attributeDetails; }
 
-    public void setAttributeDetails(List<AttributeDetails> attributeDetails) {
-        this.attributeDetails = attributeDetails;
-    }
+    public void setAttributeDetails(AttributeDetails attributeDetails) { this.attributeDetails = attributeDetails; }
+
 }

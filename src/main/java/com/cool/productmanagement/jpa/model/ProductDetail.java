@@ -1,4 +1,4 @@
-package com.cool.ProductManagement.jpa.model;
+package com.cool.productmanagement.jpa.model;
 
 import javax.persistence.*;
 import java.util.Date;
@@ -8,7 +8,7 @@ public class ProductDetail {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    @Column(name="product_id")
+    @Column(name="productId")
     private int productId;
 
     @Column(name="product_name")

@@ -1,4 +1,4 @@
-package com.cool.ProductManagement.config;
+package com.cool.productmanagement.config;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Configuration;

@@ -1,24 +1,21 @@
-package com.cool.ProductManagement.jpa.model;
+package com.cool.productmanagement.jpa.model;
 
 import javax.persistence.*;
 import java.util.Date;
 
 @Entity
-public class ProductAttribute {
+public class ProductTransaction {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    @Column(name="product_attribute_id")
-    private int productAttributeId;
+    @Column(name="product_transaction_id")
+    private int productTransactionId;
 
     @OneToOne
-    @JoinColumn(name="product_id")
+    @JoinColumn(name="productId")
     private ProductDetail productDetail;
 
-    @Column(name="product_type")
-    private String productType;
-
-    @Column(name="product_brand_name")
-    private String productBrandName;
+    @Column(name="product_transaction_status")
+    private String productTransactionStatus;
 
     @Column(name="date_time_created")
     private Date dateTimeCreated;
@@ -26,12 +23,12 @@ public class ProductAttribute {
     @Column(name="date_time_modified")
     private Date dateTimeModified;
 
-    public int getProductAttributeId() {
-        return productAttributeId;
+    public int getProductTransactionId() {
+        return productTransactionId;
     }
 
-    public void setProductAttributeId(int productAttributeId) {
-        this.productAttributeId = productAttributeId;
+    public void setProductTransactionId(int productTransactionId) {
+        this.productTransactionId = productTransactionId;
     }
 
     public ProductDetail getProductDetail() {
@@ -42,20 +39,12 @@ public class ProductAttribute {
         this.productDetail = productDetail;
     }
 
-    public String getProductType() {
-        return productType;
+    public String getProductTransactionStatus() {
+        return productTransactionStatus;
     }
 
-    public void setProductType(String productType) {
-        this.productType = productType;
-    }
-
-    public String getProductBrandName() {
-        return productBrandName;
-    }
-
-    public void setProductBrandName(String productBrandName) {
-        this.productBrandName = productBrandName;
+    public void setProductTransactionStatus(String productTransactionStatus) {
+        this.productTransactionStatus = productTransactionStatus;
     }
 
     public Date getDateTimeCreated() {
