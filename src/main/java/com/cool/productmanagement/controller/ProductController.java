@@ -24,20 +24,16 @@ public class ProductController {
 
     @Autowired
     ProductTransactionService productTransactionService;
-    
+
     private String methodprfx = "ProductController#";
 
     @RequestMapping(value = "/get-product-details",consumes = MediaType.APPLICATION_JSON_VALUE,method = RequestMethod.POST)
     public String productDetailRequest(@RequestBody Product product){
         log.info(methodprfx+"getProductDetails");
-        String productId= productDetailService.saveOrUpdateProductDetail(product);
-        System.out.println("### Name received : "+product.toString());
-       /* return "product Name : "+product.getProductName()+
-                " product description : "+product.getProductDescription()+
-                "product type : "+product.getAttributeDetails().getProductType() +
-                "product brand : "+product.getAttributeDetails().getProductBrandName();
-*/
-       return "productId returned  "+productId;
+        log.info("### Name received : "+product.toString());
+        String transacationStatus= productDetailService.saveOrUpdateProductDetail(product);
+        log.info("Returning transaction status "+transacationStatus);
+        return transacationStatus;
     }
 }
 

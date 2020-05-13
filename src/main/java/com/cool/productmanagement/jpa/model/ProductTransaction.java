@@ -62,4 +62,15 @@ public class ProductTransaction {
     public void setDateTimeModified(Date dateTimeModified) {
         this.dateTimeModified = dateTimeModified;
     }
+
+    @Override
+    public String toString() {
+        return "ProductTransaction{" +
+                "productTransactionId=" + productTransactionId +
+                ", productDetail=" + productDetail +
+                ", productTransactionStatus='" + productTransactionStatus + '\'' +
+                ", dateTimeCreated=" + dateTimeCreated +
+                ", dateTimeModified=" + dateTimeModified +
+                '}';
+    }
 }
